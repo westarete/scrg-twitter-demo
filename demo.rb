@@ -1,9 +1,7 @@
 require 'rubygems'
 require 'twitter'
 
-# Grab the most recent tweet from @onwardstate
 search = Twitter::Search.new
-tweet = search.from("onwardstate").containing("tedxpsu").first
-
-# And print out the text body
-puts tweet.text
+search.from("onwardstate").containing("homecoming").each do |tweet|
+  puts tweet.text
+end  
