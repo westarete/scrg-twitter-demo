@@ -2,6 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.6)
+    builder (3.0.0)
     faraday (0.7.5)
       addressable (~> 2.2.6)
       multipart-post (~> 1.1.3)
@@ -9,11 +10,18 @@ GEM
     faraday_middleware (0.7.0)
       faraday (~> 0.7.3)
     hashie (1.1.0)
+    json (1.6.1)
+    jwt (0.1.3)
+      json (>= 1.2.4)
     multi_json (1.0.3)
     multi_xml (0.4.1)
     multipart-post (1.1.3)
     rack (1.3.4)
     simple_oauth (0.1.5)
+    twilio-ruby (3.4.1)
+      builder (>= 2.1.2)
+      jwt (>= 0.1.2)
+      multi_json (>= 1.0.3)
     twitter (1.7.2)
       faraday (~> 0.7.4)
       faraday_middleware (~> 0.7.0)
@@ -26,4 +34,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  twilio-ruby
   twitter
